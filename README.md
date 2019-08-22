@@ -138,4 +138,4 @@ The other example snippets are preparing...
 ## Donations
 Donations are **greatly appreciated!**
 
-**[BUY ME A COFFEE](http://frani.me/donations)**
+## ☕️ **[BUY ME A COFFEE](http://frani.me/donations)** ☕️
