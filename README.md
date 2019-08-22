@@ -1,4 +1,4 @@
-# ExpressJs 4 Snippets for VS Code 
+# ExpressJs 4 Snippets Update for VS Code 
 
 This extension for Visual Studio Code adds snippets for ExpressJs v4.x for JavaScript.
 - 70 snippets
@@ -72,7 +72,7 @@ The other example snippets are preparing...
 
 |Snippet|Description|
 |---|---|
-|`e4-require`|Require ExpressJs 4 Module|
+|`e4-require`|Require ExpressJs 4 Module or Another Module|
 |`e4-namespace`|ExpressJs 4 Namespace|
 
 
@@ -133,7 +133,10 @@ The other example snippets are preparing...
 ## License
 **ExpressJs 4 Snippets** is an open source project that is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
+## Pull Request Me
+if you want to add new snipper of improve another older one, Pull Request Me
+
 ## Donations
 Donations are **greatly appreciated!**
 
-**[BUY ME A COFFEE](http://bit.ly/2hUD3Bk)**
+**[BUY ME A COFFEE](http://frani.me/donations)**
