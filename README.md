@@ -5,7 +5,7 @@ This extension for Visual Studio Code adds snippets for ExpressJs v4.x for JavaS
 - Supports es6 syntax
 
 ## Pull Request Me
-if you want to add new snipper of improve another older one, Pull Request Me
+if you want to add new snippets of improve another older one, *Just Pull Request Me*
 
 ## Demo
 ![Angular 5 - Live Preview](https://raw.githubusercontent.com/gurayyarar/expressjs4-snippets/master/images/readme-main.gif)
