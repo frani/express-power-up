@@ -1,15 +1,18 @@
-name: CI
+name: Deploy Extension
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - name: Greeting for a new version
-      run: echo Hello VSCE community, here is a new version of ESUp
-    - name: GitHub Action for vsce
-      uses: lannonbr/vsce-action@2.0.0
+      - uses: actions/checkout@v2
+      - run: npm install
+      - uses: lannonbr/vsce-action@master
+        with:
+          args: "publish -p $VSCE_TOKEN"
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
