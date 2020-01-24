@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Greeting for a new version
+      run: echo Hello VSCE community, here is a new version of ESUp
+    - name: GitHub Action for vsce
+      uses: lannonbr/vsce-action@2.0.0
