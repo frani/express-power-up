@@ -7,5 +7,5 @@
 ## v1.0.2
 - Description changed (Nov 30th, 2017)
 
-## v1.0.5
+## v1.0.6
 - Setup new Snippets (Jan 23th, 2020)
