@@ -6,7 +6,10 @@
     },
     "Middleware Morgan": {
         "prefix": "e4-mid-logger",
-        "body": "app.use(logger());$0",
+        "body": ["const ${1:logger} = require('morgan');",
+            "",
+            "app.use(${1:logger}());",
+            "$0"],
         "description": "Initializing the logger/morgan middleware"
     },
     "Middleware Compression": {
@@ -16,12 +19,12 @@
     },
     "Middleware Body Parser Json": {
         "prefix": "e4-mid-body-parser-json",
-        "body": "app.use(express.json());$0",
+        "body": "app.use(${1:bodyParser}.json());$0",
         "description": "For parsing application/json"
     },
     "Middleware Body Parser Url Encoded": {
         "prefix": "e4-mid-body-parser-url",
-        "body": "app.use(express.urlencoded({extended: true}));$0",
+        "body": ["app.use(${1:bodyParser}.urlencoded({extended: true}));$0"],
         "description": "For parsing application/x-www-form-urlencoded"
     },
     "Middleware Method Override": {
