@@ -1,0 +1,25 @@
+{
+  "Create Controller with GET": {
+    "prefix": "ep-example-helper",
+    "body": [
+      "const slugify = require('slugify')",
+      "const options = {",
+      "remove: /[*+~.()'\"!:@]/g,",
+      "lower: true,",
+      "strict: true",
+      "}",
+      "/**",
+      "* Transform string into a beauty, readable and unique URL",
+      "* @param {string} title - String title to be transformed",
+      "* @returns {string} string with encodeurl accepted",
+      "*/",
+      "exports.beautify = (title) => {",
+      "const titleTrimmed = title.trim()",
+      "const alphanum = Math.random().toString(36).slice(2,10)",
+      "const slug = slugify(titleTrimmed, options)",
+      "return `${slug}-${alphanum}`",
+      "}\n$0"
+    ],
+    "description": "Create an '*.helper.js' file content, importing slugify. As example, "
+  }
+}

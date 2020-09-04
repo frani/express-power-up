@@ -1,65 +1,96 @@
 {
-    "name": "expressjs-4-snippets-update",
-    "displayName": "ExpressJs 4 Snippets Update",
-    "description": "Just start use with e4 keys of ExpressJs 4 snippets.",
-    "version": "1.0.6",
-    "publisher": "frani",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/frani/expressjs4-snippets-update"
-    },
-    "bugs": {
-        "url": "https://github.com/frani/expressjs4-snippets-update/issues"
-    },
-    "engines": {
-        "vscode": "^1.18.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "icon": "images/icon.jpg",
-    "keywords": [
-        "express",
-        "expressjs",
-        "snippet",
-        "nodejs",
-        "api"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript/application.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript/examples.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript/handlers.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript/middleware.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript/module.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript/request.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript/response.json"
-            },
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript/router.json"
-            }
-        ]
-    }
+  "name": "express-power-up",
+  "displayName": "Express power up Snippets",
+  "description": "ExpressJS Snippets to make a good clean code API",
+  "version": "1.1.0",
+  "publisher": "frani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frani/express-power-up.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frani/express-power-up.git/issues"
+  },
+  "engines": {
+    "vscode": "^1.18.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "images/logo.png",
+  "keywords": [
+    "express",
+    "expressjs",
+    "snippet",
+    "snippets",
+    "power",
+    "up",
+    "nodejs",
+    "api"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/application.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/handlers.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/middleware.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/module.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/request.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/response.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/router.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/examples/controller.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/examples/db.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/examples/hello.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/examples/helper.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/examples/middleware.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/examples/router.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/examples/schema.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/examples/validation.json"
+      }
+    ]
+  }
 }

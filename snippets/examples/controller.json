@@ -1,0 +1,34 @@
+{
+  "Create Controller with GET": {
+    "prefix": "ep-example-controller",
+    "body": [
+      "const httpStatus = require('http-status')",
+      "const ${1:item}sDB = require('../db/${1:item}s.db')",
+      "",
+      "",
+      "/**",
+      "* Get ${1:item}",
+      "* @public",
+      "*/",
+      "(exports.get${1:item} = async (req, res, next) => {",
+      "try {",
+      "const ${1:item}Found = await ${1:item}sDB.find({ 'uid': ${1:item}Id })",
+      "if (!!${1:item}Found) {",
+      "return res.status(httpStatus.OK).json({",
+      "success: true,",
+      "message: `${1:item} found`,",
+      "body: ${1:item}Found",
+      "})",
+      "}",
+      "return res.status(httpStatus.NOT_FOUND).json({",
+      "success: false,",
+      "message: `${1:item} not found`",
+      "})",
+      "} catch (err) {",
+      "next(err)",
+      "}",
+      "})\n$0"
+    ],
+    "description": "Create an '*.controller.js' file content, importing http-status and setting function to handle get request"
+  }
+}

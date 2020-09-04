@@ -1,0 +1,52 @@
+{
+  "Require Module": {
+    "prefix": "ep-require",
+    "body": "const ${3:${1}} = require('${2:${1:express}}')\n$0",
+    "description": "Add a Module, by default is Express"
+  },
+  "Require DB module": {
+    "prefix": "ep-require-db",
+    "body": ["const ${1:item}DB = require('../dbs/${1:item}.db')\n$0"],
+    "description": "Add require for a '*.db.js'"
+  },
+  "Require Schema module": {
+    "prefix": "ep-require-schema",
+    "body": [
+      "const ${1:item}Schema = require('${2:../schemas/${1:item}.schema}')\n$0"
+    ],
+    "description": "Add require for a '*.schema.js'"
+  },
+  "Require Helper module": {
+    "prefix": "ep-require-helper",
+    "body": [
+      "const ${1:item}Helper = require('${2:../helpers/${1:item}.helper}')\n$0"
+    ],
+    "description": "Add require for a '*.helper.js'"
+  },
+  "Require service module": {
+    "prefix": "ep-require-service",
+    "body": [
+      "const ${1:item} = require('${2:../services/${1:item}.service}')\n$0"
+    ],
+    "description": "Add require for a '*.service.js'"
+  },
+  "Require config module": {
+    "prefix": "ep-require-config",
+    "body": ["const ${1:item} = require('${2:../config/${1:item}.conf}')\n$0"],
+    "description": "Add require for a '*.conf.js'"
+  },
+  "Require validation module": {
+    "prefix": "ep-require-validation",
+    "body": [
+      "const ${2:validation} = require('${3:../validations/${1:item}.validation}')\n$0"
+    ],
+    "description": "Add require for a '*.validation.js'"
+  },
+  "Require middleware module": {
+    "prefix": "ep-require-middle",
+    "body": [
+      "const { ${2:middleware} } = require('${3:../middlewares/${1:middleware}.mid}')\n$0"
+    ],
+    "description": "Add require for a '*.mid.js'"
+  }
+}

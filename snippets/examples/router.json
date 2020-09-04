@@ -1,0 +1,25 @@
+{
+  "Create a Router example": {
+    "prefix": "ep-example-router",
+    "body": [
+      "const express = require('express')",
+      "const { validate } = require('express-validation')",
+      "const validation = require('../../validations/${1:item}s.validation')",
+      "const controller = require('../../controllers/${1:item}s.controller')",
+      "",
+      "const router = express.Router({ mergeParams: true, caseSensitive: true })",
+      "",
+      "router",
+      "",
+      ".get('/', controller.list)",
+      "",
+      ".post('/', validate(validation.post${1:Item}), controller.post${1:Item})",
+      "",
+      ".get('/:${1:item}Id', controller.get${1:Item})",
+      "",
+      "",
+      "module.exports = router\n$0"
+    ],
+    "description": "Create an '*.router.js' file content importing validate, validation and controller"
+  }
+}

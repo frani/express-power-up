@@ -1,141 +1,162 @@
-# ExpressJs 4 Snippets Update for VS Code 
+# Express power up Snippets
 
-This extension for Visual Studio Code adds snippets for ExpressJs v4.x for JavaScript.
-- 70 snippets
+This extension for Visual Studio Code adds snippets for ExpressJS
+
+- 100+ snippets
 - Supports es6 syntax
 
-## Pull Request Me
-if you want to add new snippets of improve another older one, *Just Pull Request Me*
+Focus on create Express API with clean code and follow the next folder structure:
+
+- /routers
+- /controllers
+- /middlewares
+- /validations
+- /schemas
+- /dbs
+- /helpers
+
+## Pull Requests are welcome
+
+Let's improve together and make this extension and expressJS community bigger and better!
 
 ## Demo
-![Angular 5 - Live Preview](https://raw.githubusercontent.com/gurayyarar/expressjs4-snippets/master/images/readme-main.gif)
+
+![Express Power Up - Demo](https://raw.githubusercontent.com/frani/express-power-up/master/images/demo.gif)
 
 ## Usage
+
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ## Snippets
+
 **Application Snippets**
 
-|Snippet|Description|
-|---|---|
-|`e4-app`|App Variable|
-|`e4-app-all`|All HTTP Requests|
-|`e4-app-get`|HTTP GET Requests|
-|`e4-app-post`|HTTP POST Requests|
-|`e4-app-put`|HTTP PUT Requests|
-|`e4-app-delete`|HTTP DELETE Requests|
-|`e4-app-patch`|HTTP PATCH Requests|
-|`e4-app-disable`|App Disable|
-|`e4-app-disabled`|App Disabled|
-|`e4-app-enable`|App Enable|
-|`e4-app-enabled`|App Enabled|
-|`e4-app-engine`|App Engine|
-|`e4-app-param`|App Param|
-|`e4-app-path`|App Path|
-|`e4-app-render`|App Render|
-|`e4-app-route`|App Route|
-|`e4-app-set`|App Set|
-|`e4-app-listen`|App Listen|
-|`e4-app-listen-with-callback`|App Listen With Callback|
-|`e4-app-use`|App Use|
-
+| Snippet                       | Description              |
+| ----------------------------- | ------------------------ |
+| `ep-app`                      | App Variable             |
+| `ep-app-all`                  | All HTTP Requests        |
+| `ep-app-get`                  | HTTP GET Requests        |
+| `ep-app-post`                 | HTTP POST Requests       |
+| `ep-app-put`                  | HTTP PUT Requests        |
+| `ep-app-delete`               | HTTP DELETE Requests     |
+| `ep-app-patch`                | HTTP PATCH Requests      |
+| `ep-app-disable`              | App Disable              |
+| `ep-app-disabled`             | App Disabled             |
+| `ep-app-enable`               | App Enable               |
+| `ep-app-enabled`              | App Enabled              |
+| `ep-app-engine`               | App Engine               |
+| `ep-app-param`                | App Param                |
+| `ep-app-path`                 | App Path                 |
+| `ep-app-render`               | App Render               |
+| `ep-app-route`                | App Route                |
+| `ep-app-set`                  | App Set                  |
+| `ep-app-listen`               | App Listen               |
+| `ep-app-listen-with-callback` | App Listen With Callback |
+| `ep-app-use`                  | App Use                  |
 
 **Examples Snippets**
 
-|Snippet|Description|
-|---|---|
-|`e4-example-helloworld`|Example - Hello World|
+| Snippet                 | Description      |
+| ----------------------- | ---------------- |
+| `ep-example-helloworld` | Hello World      |
+| `ep-example-controller` | \*.controller.js |
+| `ep-example-db`         | \*.db.js         |
+| `ep-example-helper`     | \*.helper.js     |
+| `ep-example-middleware` | \*.middleware.js |
+| `ep-example-router`     | \*.router.js     |
+| `ep-example-schema`     | \*.schema.js     |
+| `ep-example-validation` | \*.validation.js |
 
 The other example snippets are preparing...
 
-
 **Handlers Snippets**
 
-|Snippet|Description|
-|---|---|
-|`e4-404-handler`|404 - Not Found|
-|`e4-500-handler`|500 - Error|
-
+| Snippet          | Description     |
+| ---------------- | --------------- |
+| `ep-404-handler` | 404 - Not Found |
+| `ep-500-handler` | 500 - Error     |
 
 **Middleware Snippets**
 
-|Snippet|Description|
-|---|---|
-|`e4-mid-helmet`|Middleware Helmet|
-|`e4-mid-logger`|Middleware Morgan/Logger|
-|`e4-mid-compress`|Middleware Compression|
-|`e4-mid-body-parser-json`|Middleware Body Parser Json|
-|`e4-mid-body-parser-url`|Middleware Body Parser Url Encoded|
-|`e4-mid-method-override`|Middleware Method Override|
-|`e4-mid-static-file`|Middleware Static File|
-
+| Snippet                   | Description                        |
+| ------------------------- | ---------------------------------- |
+| `ep-mid-helmet`           | Middleware Helmet                  |
+| `ep-mid-morgan`           | Middleware Morgan                  |
+| `ep-mid-compress`         | Middleware Compression             |
+| `ep-mid-body-parser-json` | Middleware Body Parser Json        |
+| `ep-mid-body-parser-url`  | Middleware Body Parser Url Encoded |
+| `ep-mid-method-override`  | Middleware Method Override         |
+| `ep-mid-static-file`      | Middleware Static File             |
 
 **Module Snippets**
 
-|Snippet|Description|
-|---|---|
-|`e4-require`|Require ExpressJs 4 Module or Another Module|
-|`e4-namespace`|ExpressJs 4 Namespace|
-
+| Snippet        | Description                                  |
+| -------------- | -------------------------------------------- |
+| `ep-require`   | Require ExpressJs 4 Module or Another Module |
+| `ep-namespace` | ExpressJs 4 Namespace                        |
 
 **Request Snippets**
 
-|Snippet|Description|
-|---|---|
-|`e4-req-accepts`|Request Accepts|
-|`e4-req-accepts-charsets`|Request Accepts Charsets|
-|`e4-req-accepts-languages`|Request Accepts Languages|
-|`e4-req-get`|Request Get|
-|`e4-req-is`|Request Is|
-|`e4-req-range`|Request Range|
-
+| Snippet                    | Description               |
+| -------------------------- | ------------------------- |
+| `ep-req-accepts`           | Request Accepts           |
+| `ep-req-accepts-charsets`  | Request Accepts Charsets  |
+| `ep-req-accepts-languages` | Request Accepts Languages |
+| `ep-req-get`               | Request Get               |
+| `ep-req-is`                | Request Is                |
+| `ep-req-range`             | Request Range             |
 
 **Response Snippets**
 
-|Snippet|Description|
-|---|---|
-|`e4-res-append`|Response Append|
-|`e4-res-attachment`|Response Attachment|
-|`e4-res-cookie`|Response Cookie|
-|`e4-res-cookie-with-options`|Response Cookie With Options|
-|`e4-res-clear-cookie`|Response Clear Cookie|
-|`e4-res-clear-cookie-with-options`|Response Clear Cookie With Options|
-|`e4-res-download`|Response Download|
-|`e4-res-end`|Response End|
-|`e4-res-format`|Response Format|
-|`e4-res-get`|Response Get|
-|`e4-res-json`|Response Json|
-|`e4-res-jsonp`|Response Jsonp|
-|`e4-res-links`|Response Links|
-|`e4-res-location`|Response Location|
-|`e4-res-redirect`|Response Redirect|
-|`e4-res-redirect-with-status`|Response Redirect With Status|
-|`e4-res-render`|Response Render|
-|`e4-res-send`|Response Send|
-|`e4-res-send-file`|Response Send File|
-|`e4-res-send-status`|Response Send Status|
-|`e4-res-set`|Response Set|
-|`e4-res-status`|Response Status|
-|`e4-res-rss`|Response Rss|
-|`e4-res-type`|Response Type|
-|`e4-res-vary`|Response Vary|
-
+| Snippet                            | Description                        |
+| ---------------------------------- | ---------------------------------- |
+| `ep-res-append`                    | Response Append                    |
+| `ep-res-attachment`                | Response Attachment                |
+| `ep-res-cookie`                    | Response Cookie                    |
+| `ep-res-cookie-with-options`       | Response Cookie With Options       |
+| `ep-res-clear-cookie`              | Response Clear Cookie              |
+| `ep-res-clear-cookie-with-options` | Response Clear Cookie With Options |
+| `ep-res-download`                  | Response Download                  |
+| `ep-res-end`                       | Response End                       |
+| `ep-res-format`                    | Response Format                    |
+| `ep-res-get`                       | Response Get                       |
+| `ep-res-json`                      | Response Json                      |
+| `ep-res-jsonp`                     | Response Jsonp                     |
+| `ep-res-links`                     | Response Links                     |
+| `ep-res-location`                  | Response Location                  |
+| `ep-res-redirect`                  | Response Redirect                  |
+| `ep-res-redirect-with-status`      | Response Redirect With Status      |
+| `ep-res-render`                    | Response Render                    |
+| `ep-res-send`                      | Response Send                      |
+| `ep-res-send-file`                 | Response Send File                 |
+| `ep-res-send-status`               | Response Send Status               |
+| `ep-res-set`                       | Response Set                       |
+| `ep-res-status`                    | Response Status                    |
+| `ep-res-rss`                       | Response Rss                       |
+| `ep-res-type`                      | Response Type                      |
+| `ep-res-vary`                      | Response Vary                      |
 
 **Router Snippets**
 
-|Snippet|Description|
-|---|---|
-|`e4-router`|ExpressJs 4 Router Variable|
-|`e4-router-all`|Router All|
-|`e4-router-get`|Router GET|
-|`e4-router-post`|Router POST|
-|`e4-router-put`|Router PUT|
-|`e4-router-delete`|Router DELETE|
+| Snippet            | Description                 |
+| ------------------ | --------------------------- |
+| `ep-router`        | ExpressJs 4 Router Variable |
+| `ep-router-all`    | Router All                  |
+| `ep-router-get`    | Router GET                  |
+| `ep-router-post`   | Router POST                 |
+| `ep-router-put`    | Router PUT                  |
+| `ep-router-delete` | Router DELETE               |
 
 ## License
-**ExpressJs 4 Snippets** is an open source project that is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+**Express power up Snippets** is an open source project that is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Credits
+
+This extension start as a folk from [expressjs4-snippets](https://github.com/gurayyarar/expressjs4-snippets) , thanks [gurayyarar](https://github.com/gurayyarar)
 
 ## Donations
-Donations are **greatly appreciated!**
 
-## ☕️ **[BUY ME A COFFEE](http://frani.me/donations)** ☕️
+_I would like to spend more time coding in FOSS projects, if you can sopport to me so I can do it as my primary work_
+
+Donations **greatly appreciated!** you can [buy me a coffee](http://frani.me/donations)

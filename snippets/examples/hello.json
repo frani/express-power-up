@@ -1,0 +1,34 @@
+{
+  "Example - Hello World": {
+    "prefix": "ep-example-helloworld",
+    "body": [
+      "const morgan = require('morgan')",
+      "const compress = require('compression')",
+      "const httpStatus = require('http-status')",
+      "const methodOverride = require('method-override')",
+      "const helmet = require('helmet')",
+      "const app = require('express')()",
+      "const cors = require('cors')",
+      "const bodyParser = require('body-parser')",
+      "",
+      "// Middlewares",
+      "app.use(helmet())",
+      "app.use(compress())",
+      "app.use(methodOverride())",
+      "app.use(cors(`https://${process.env.CLIENT_URL}`))",
+      "app.use(morgan('dev'))",
+      "app.use(bodyParser.urlencoded({ extended: false }))",
+      "app.use(bodyParser.json())",
+      "",
+      "app.get('/', (req, res) => {",
+      "\tres.status(httpStatus.OK).json({message: 'Hello World!'})",
+      "})",
+      "",
+      "app.listen(process.env.PORT, process.env.HOST, () => {",
+      "\tconsole.log(`⚡ Server running on http://${process.env.HOST}:${process.env.PORT}`)",
+      "})",
+      "$0"
+    ],
+    "description": "Kick start with 'Hello World' file content"
+  }
+}

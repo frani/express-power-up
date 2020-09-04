@@ -1,0 +1,39 @@
+{
+  "Create Controller with GET": {
+    "prefix": "ep-example-db",
+    "body": [
+      "const ${1:item}Schema = require('../schemas/${1:item}.schema')",
+      "/**",
+      "* @param {number} [page=1] - page number",
+      "* List ${1:item}s",
+      "* @param {number} [limit=10] - ${1:item}s per page",
+      "* @param {object} [filterQuery] - mongo criteria to find one ${1:item}",
+      "* @returns {array} Array with ${1:item}s objects",
+      "*/",
+      "exports.list = async (page = 1, limit = 10, filterQuery = {}) => {",
+      "const options = { page, limit, sort: { _id: -1 } }",
+      "try {",
+      "const found = await ${1:item}Schema.paginate(filterQuery, options)",
+      "return found",
+      "} catch (error) {",
+      "return error",
+      "}",
+      "}",
+      "/**",
+      "* Find one ${1:item}",
+      "* @param {object} [findQuery] - mongo criteria to find one ${1:item}",
+      "* @param {object} [projection] - mongo criteria to projection resutls",
+      "* @returns {object} object with ${1:item} founded",
+      "*/",
+      "exports.find = async (findQuery, projection = {}) => {",
+      "try {",
+      "const found = await ${1:item}Schema.findOne(findQuery, projection).lean()",
+      "return found",
+      "} catch (error) {",
+      "return error",
+      "}",
+      "}\n$0"
+    ],
+    "description": "Create an '*.db.js' file content, importing mongoose and mongoosePaginate"
+  }
+}

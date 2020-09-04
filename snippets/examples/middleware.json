@@ -1,0 +1,18 @@
+{
+  "Create a Middleware": {
+    "prefix": "ep-example-middleware",
+    "body": [
+      "const httpStatus = require('http-status')",
+      "/**",
+      "* ${1:middle}. ",
+      "* @public",
+      "*/",
+      "exports.${1:middle} = (err, req, res, next) => {",
+      "$0",
+      "if ( something === false ) res.status(httpStatus.NOT_FOUND)",
+      "return next()",
+      "}"
+    ],
+    "description": "Create '*.mid.js' file content example importing httpStatus"
+  }
+}
