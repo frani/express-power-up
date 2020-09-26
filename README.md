@@ -1,4 +1,20 @@
-# Express power up Snippets
+# Express power up 
+
+> Snippets for creating modern and clean ExpressJS API's
+
+---
+
+<div align="center">
+	<a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up" title="Express-power-up">
+		<div>
+      <img src="https://github.com/frani/express-power-up/raw/master/images/logo.png" alt="Express power up Logo" width="200" />
+		</div>
+    <sup>This project is maintained by Frani and community.</sup><br />
+		<sup><b>The easiest way to create ExpressJS APIs</b></sup>
+	</a>
+</div>
+
+---
 
 This extension for Visual Studio Code adds snippets for ExpressJS
 
