@@ -1,8 +1,24 @@
+<h1 align="center">
+  <br>
+  <a href="https://webtorrent.io"><img src="https://github.com/frani/express-power-up/raw/master/images/logo.png" alt="Express-power-up-logo" width="200"></a>
+  <br>
+	Express power up <i>Snippets</i>
+  <br>
+  <br>
+</h1>
+
+<h4 align="center">The best tool to create ExpressJS APIs.</h4>
+
+<p align="center">
+  <a href="https://discord.gg/sYjKHC8"><img alt="Discord" src="https://img.shields.io/discord/759780590962212866"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img src="https://img.shields.io/static/v1?style=flat&logo=visual-studio-code&logoColor=blue&label=VS%20Code&message=Snippets" alt="VSCode-ext"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/frani.express-power-up"></a>
+</p>
+
+
 # Express power up 
 
 > Snippets for creating modern and clean ExpressJS API's
-
----
 
 <div align="center">
 	<a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up" title="Express-power-up">
@@ -10,7 +26,7 @@
       <img src="https://github.com/frani/express-power-up/raw/master/images/logo.png" alt="Express power up Logo" width="200" />
 		</div>
     <sup>This project is maintained by Frani and community.</sup><br />
-		<sup><b>The easiest way to create ExpressJS APIs</b></sup>
+		<sup><b>The best tool to create ExpressJS APIs</b></sup>
 	</a>
 </div>
 
@@ -40,9 +56,6 @@ Let's improve together and make this extension and expressJS community bigger an
 
 ![Express Power Up - Demo](https://raw.githubusercontent.com/frani/express-power-up/master/images/demo.gif)
 
-## Usage
-
-Type part of a snippet, press `enter`, and the snippet unfolds.
 
 ## Snippets
 
