@@ -25,6 +25,7 @@ Focus on create Express API with clean code and follow the next folder structure
 
 - /routers
 - /controllers
+- /services
 - /middlewares
 - /validations
 - /schemas
@@ -76,9 +77,10 @@ Type part of a snippet, press `enter`, and the snippet unfolds.
 | ----------------------- | ---------------- |
 | `ep-example-helloworld` | Hello World      |
 | `ep-example-controller` | \*.controller.js |
+| `ep-example-service`    | \*.service.js    |
 | `ep-example-db`         | \*.db.js         |
 | `ep-example-helper`     | \*.helper.js     |
-| `ep-example-middleware` | \*.middleware.js |
+| `ep-example-middleware` | \*.mid.js        |
 | `ep-example-router`     | \*.router.js     |
 | `ep-example-schema`     | \*.schema.js     |
 | `ep-example-validation` | \*.validation.js |
@@ -173,6 +175,6 @@ This extension start as a folk from [expressjs4-snippets](https://github.com/gur
 
 ## Donations
 
-_I would like to spend more time coding in FOSS projects, if you can sopport to me so I can do it as my primary work_
+_I would like to spend more time coding in FOSS projects, if you can, support to me so I can do it as my primary work_
 
 Donations **greatly appreciated!** you can [buy me a coffee](http://frani.me/donations)
