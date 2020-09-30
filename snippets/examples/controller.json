@@ -3,7 +3,7 @@
     "prefix": "ep-example-controller",
     "body": [
       "const httpStatus = require('http-status')",
-      "const ${1:item}sDB = require('../db/${1:item}s.db')",
+      "const ${1:item}sDB = require('../dbs/${1:item}s.db')",
       "",
       "",
       "/**",
