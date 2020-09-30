@@ -11,36 +11,51 @@
 
 <p align="center">
   <a href="https://discord.gg/sYjKHC8"><img alt="Discord" src="https://img.shields.io/discord/759780590962212866"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img src="https://img.shields.io/static/v1?style=flat&logo=visual-studio-code&logoColor=blue&label=VS%20Code&message=Snippets" alt="VSCode-ext"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img src="https://img.shields.io/visual-studio-marketplace/v/frani.express-power-up?style=flat&logo=visual-studio-code&logoColor=blue" alt="VSCode-ext"></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/frani.express-power-up"></a>
 </p>
 
-This extension for Visual Studio Code adds snippets for ExpressJS
+# Demo
+
+<p align="center">
+  <img width="600" alt="Express Power Up - Demo" src="https://raw.githubusercontent.com/frani/express-power-up/master/images/demo.gif">
+</p>
+
+# About EPUs
 
 - 100+ snippets
 - Supports es6 syntax
+- [airbnb javascript style](https://github.com/airbnb/javascript)
 
-Focus on create Express API with clean code and follow the next folder structure:
+# Install
 
-- /routers
-- /controllers
-- /services
-- /middlewares
-- /validations
-- /schemas
-- /dbs
-- /helpers
+### Install with VScode:
 
-## Pull Requests are welcome
+To install the extension, open the Extensions view on sidenav, search for `express power up` to filter results and select `Express power up Snippets` authored by [Frani](https://github.com/frani).
 
-Let's improve together and make this extension and expressJS community bigger and better!
+### Install with Terminal:
 
-## Demo
+```bash
+code --install-extension frani.express-power-up
+```
 
-![Express Power Up - Demo](https://raw.githubusercontent.com/frani/express-power-up/master/images/demo.gif)
+in case you have `code` command disable [see this link to enable it](https://code.visualstudio.com/docs/editor/command-line#_common-questions)
 
+# Project Structure
 
-## Snippets
+| Folder       | Suffix Extention | description                                                                            |
+| ------------ | ---------------- | -------------------------------------------------------------------------------------- |
+| /config      | \*.conf.js       | Environment variables and configuration related things                                 |
+| /routers     | \*.router.js     | Routers                                                                                |
+| /controllers | \*.controller.js | route controller ( controller layer)                                                   |
+| /services    | \*.service.js    | business logic, incluye intertal or externla servicies as SDK (service layer)          |
+| /middlewares | \*.mid.js        | custom express middlewares                                                             |
+| /validations | \*.validation.js | Request data validation schemas                                                        |
+| /schemas     | \*.schema.js     | Mongoose models/schemas (data layer)                                                   |
+| /dbs         | \*.db.js         | Function to manage Mongoose schemas                                                    |
+| /helpers     | \*.helper.js     | Helpful functions that can be used in many places but is not necesary a business logic |
+
+# Snippets
 
 **Application Snippets**
 
@@ -161,16 +176,12 @@ The other example snippets are preparing...
 | `ep-router-put`    | Router PUT                  |
 | `ep-router-delete` | Router DELETE               |
 
-## License
+# Contributors
 
-**Express power up Snippets** is an open source project that is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+# Inspiration
 
-## Credits
+- [expressjs4-snippets](https://github.com/gurayyarar/expressjs4-snippets)
 
-This extension start as a folk from [expressjs4-snippets](https://github.com/gurayyarar/expressjs4-snippets) , thanks [gurayyarar](https://github.com/gurayyarar)
+# License
 
-## Donations
-
-_I would like to spend more time coding in FOSS projects, if you can, support to me so I can do it as my primary work_
-
-Donations **greatly appreciated!** you can [buy me a coffee](http://frani.me/donations)
+MIT © [Frani](http://github.com/frani)
