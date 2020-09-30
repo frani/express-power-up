@@ -10,7 +10,7 @@
       "* Get ${1:item}",
       "* @public",
       "*/",
-      "(exports.get${1:item} = async (req, res, next) => {",
+      "exports.get${1:item} = async (req, res, next) => {",
       "try {",
       "const ${1:item}Found = await ${1:item}sDB.find({ 'uid': ${1:item}Id })",
       "if (!!${1:item}Found) {",
@@ -27,7 +27,7 @@
       "} catch (err) {",
       "next(err)",
       "}",
-      "})\n$0"
+      "}\n$0"
     ],
     "description": "Create an '*.controller.js' file content, importing http-status and setting function to handle get request"
   }
