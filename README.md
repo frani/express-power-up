@@ -41,7 +41,9 @@ code --install-extension frani.express-power-up
 
 in case you have `code` command disable [see this link to enable it](https://code.visualstudio.com/docs/editor/command-line#_common-questions)
 
-# Project Structure
+# Folder Structure
+
+this snippets are thought to apply on ExpressJS with the next folder structure
 
 | Folder       | Suffix Extention | description                                                                            |
 | ------------ | ---------------- | -------------------------------------------------------------------------------------- |
@@ -175,6 +177,19 @@ The other example snippets are preparing...
 | `ep-router-post`   | Router POST                 |
 | `ep-router-put`    | Router PUT                  |
 | `ep-router-delete` | Router DELETE               |
+
+**Test Snippets**
+
+| Snippet                   | Description                                 |
+| ------------------------- | ------------------------------------------- |
+| `ep-test-describe-get`    | Create Describe and 'it' with GET method    |
+| `ep-test-describe-post`   | Create Describe and 'it' with POST method   |
+| `ep-test-describe-put`    | Create Describe and 'it' with PUT method    |
+| `ep-test-describe-delete` | Create Describe and 'it' with DELETE method |
+| `ep-test-it-get`          | Create 'it' test with GET method            |
+| `ep-test-it-post`         | Create 'it' test with POST method           |
+| `ep-test-it-put`          | Create 'it' test with PUT method            |
+| `ep-test-it-delete`       | Create 'it' test with DELETE method         |
 
 # Contributors
 

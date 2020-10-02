@@ -1,0 +1,26 @@
+{
+  "Create Test with GET": {
+    "prefix": "ep-example-test",
+    "body": [
+      "const request = require('supertest')",
+      "const httpStatus = require('http-status')",
+      "const server = require('../server.js')",
+      "",
+      "describe('GET /${2:v1}/${1:status}', () => {",
+      "\tit('${3:should response with OK}', () => {",
+      "\t\treturn request(server)",
+      "\t\t.get('/${2:v1}/${1:status}')",
+      "\t\t.set('Accept', 'application/json')",
+      "\t\t.expect('Content-Type', /json/)",
+      "\t\t.expect(${4:httpstatus.OK})",
+      "\t\t.then((res) => {",
+      "\t\texpect(res.body.success).to.be.equal(true)",
+      "\t\texpect(res.body.message).to.be.equal('OK')",
+      "\t\texpect(res.body.${5:status}).to.be.equal(${0:'OK'})",
+      "\t\t})",
+      "\t})",
+      "})\n"
+    ],
+    "description": "Create an '*.test.js' file content, importing http-status, supertest and server.js"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "Describe and 'it' - GET": {
+    "prefix": "ep-test-describe-GET",
+    "body": [
+      "describe('GET /${2:v1}/${1:status}', () => {",
+      "\tit('${3:should response with OK}', () => {",
+      "\t\treturn request(server)",
+      "\t\t.get('/${2:v1}/${1:status}')",
+      "\t\t.set('Accept', 'application/json')",
+      "\t\t.expect('Content-Type', /json/)",
+      "\t\t.expect(${4:httpstatus.OK})",
+      "\t\t.then((res) => {",
+      "\t\texpect(res.body.success).to.be.equal(true)",
+      "\t\texpect(res.body.message).to.be.equal('OK')",
+      "\t\texpect(res.body.${5:status}).to.be.equal(${0:'OK'})",
+      "\t\t})",
+      "\t})",
+      "})\n"
+    ],
+    "description": "Create Describe and 'it' with GET method"
+  },
+  "Describe and 'it' - POST": {
+    "prefix": "ep-test-describe-POST",
+    "body": [
+      "describe('POST /${2:v1}/${1:status}', () => {",
+      "\tit('${3:should response with }', () => {",
+      "\t\tconst data = {",
+      "\t\t$0",
+      "\t\t}",
+      "\t\treturn request(server)",
+      "\t\t.post('/${2:v1}/${1:status}')",
+      "\t\t.send(data)",
+      "\t\t.set('Accept', 'application/json')",
+      "\t\t.expect('Content-Type', /json/)",
+      "\t\t.expect(${4:httpstatus.CREATED})",
+      "\t\t.then((res) => {",
+      "\t\texpect(res.body.success).to.be.equal(true)",
+      "\t\texpect(res.body.message).to.be.equal({5:'created'})",
+      "\t\texpect(res.body.body).to.be.equal($6:''})",
+      "\t\t})",
+      "\t})",
+      "})\n"
+    ],
+    "description": "Create Describe and 'it' with POST method"
+  },
+  "Describe and 'it' - PUT": {
+    "prefix": "ep-test-describe-PUT",
+    "body": [
+      "describe('PUT /${2:v1}/${1:status}', () => {",
+      "\tit('${3:should response with }', () => {",
+      "\t\tconst data = {",
+      "\t\t$0",
+      "\t\t}",
+      "\t\treturn request(server)",
+      "\t\t.put('/${2:v1}/${1:status}')",
+      "\t\t.send(data)",
+      "\t\t.set('Accept', 'application/json')",
+      "\t\t.expect('Content-Type', /json/)",
+      "\t\t.expect(${4:httpstatus.OK})",
+      "\t\t.then((res) => {",
+      "\t\texpect(res.body.success).to.be.equal(true)",
+      "\t\texpect(res.body.message).to.be.equal({5:'updated'})",
+      "\t\texpect(res.body.body).to.be.equal($6:''})",
+      "\t\t})",
+      "\t})",
+      "})\n"
+    ],
+    "description": "Create Describe and 'it' with PUT method"
+  },
+  "Describe and 'it' - DELETE": {
+    "prefix": "ep-test-describe-DELETE",
+    "body": [
+      "describe('DELETE /${2:v1}/${1:status}', () => {",
+      "\tit('${3:should response with }', () => {",
+      "\t\treturn request(server)",
+      "\t\t.delete('/${2:v1}/${1:status}')",
+      "\t\t.set('Accept', 'application/json')",
+      "\t\t.expect('Content-Type', /json/)",
+      "\t\t.expect(${4:httpstatus.OK})",
+      "\t\t.then((res) => {",
+      "\t\texpect(res.body.success).to.be.equal(true)",
+      "\t\texpect(res.body.message).to.be.equal({5:'updated'})",
+      "\t\texpect(res.body.body).to.be.equal($6:''})",
+      "\t\t})",
+      "\t})",
+      "})\n"
+    ],
+    "description": "Create Describe and 'it' with DELETE method"
+  },
+  "it - GET": {
+    "prefix": "ep-test-it-GET",
+    "body": [
+      "it('${1:should response with OK}', () => {",
+      "\treturn request(server)",
+      "\t.get('/${2:v1}/${3:status}')",
+      "\t.set('Accept', 'application/json')",
+      "\t.expect('Content-Type', /json/)",
+      "\t.expect(${4:httpstatus.OK})",
+      "\t.then((res) => {",
+      "\texpect(res.body.success).to.be.equal(true)",
+      "\texpect(res.body.message).to.be.equal('OK')",
+      "\texpect(res.body.${3:status}).to.be.equal(${0:'OK'})",
+      "\t})",
+      "})\n"
+    ],
+    "description": "Create 'it' test with GET method"
+  },
+  "it - POST": {
+    "prefix": "ep-test-it-POST",
+    "body": [
+      "it('${1:should response with }', () => {",
+      "\tconst data = {",
+      "\t$0",
+      "\t}",
+      "\treturn request(server)",
+      "\t.post('/${2:v1}/${3:status}')",
+      "\t.send(data)",
+      "\t.set('Accept', 'application/json')",
+      "\t.expect('Content-Type', /json/)",
+      "\t.expect(${4:httpstatus.CREATED})",
+      "\t.then((res) => {",
+      "\texpect(res.body.success).to.be.equal(true)",
+      "\texpect(res.body.message).to.be.equal({5:'created'})",
+      "\texpect(res.body.body).to.be.equal($6:''})",
+      "\t})",
+      "})\n"
+    ],
+    "description": "Create 'it' test with POST method"
+  },
+  "it - PUT": {
+    "prefix": "ep-test-it-PUT",
+    "body": [
+      "it('${1:should response with }', () => {",
+      "\tconst data = {",
+      "\t$0",
+      "\t}",
+      "\treturn request(server)",
+      "\t.put('/${2:v1}/${3:status}')",
+      "\t.send(data)",
+      "\t.set('Accept', 'application/json')",
+      "\t.expect('Content-Type', /json/)",
+      "\t.expect(${4:httpstatus.OK})",
+      "\t.then((res) => {",
+      "\texpect(res.body.success).to.be.equal(true)",
+      "\texpect(res.body.message).to.be.equal({5:'updated'})",
+      "\texpect(res.body.body).to.be.equal($6:''})",
+      "\t})",
+      "})\n"
+    ],
+    "description": "Create 'it' test with PUT method"
+  },
+  "it - DELETE": {
+    "prefix": "ep-test-it-DELETE",
+    "body": [
+      "it('${1:should response with }', () => {",
+      "\treturn request(server)",
+      "\t.delete('/${2:v1}/${3:status}')",
+      "\t.set('Accept', 'application/json')",
+      "\t.expect('Content-Type', /json/)",
+      "\t.expect(${4:httpstatus.OK})",
+      "\t.then((res) => {",
+      "\texpect(res.body.success).to.be.equal(true)",
+      "\texpect(res.body.message).to.be.equal({5:'updated'})",
+      "\texpect(res.body.body).to.be.equal($6:''})",
+      "\t})",
+      "})\n"
+    ],
+    "description": "Create 'it' test with DELETE method"
+  }
+}
