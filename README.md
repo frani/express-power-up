@@ -56,6 +56,8 @@ this snippets are thought to apply on ExpressJS with the next folder structure
 | /schemas     | \*.schema.js     | Mongoose models/schemas (data layer)                                                   |
 | /dbs         | \*.db.js         | Function to manage Mongoose schemas                                                    |
 | /helpers     | \*.helper.js     | Helpful functions that can be used in many places but is not necesary a business logic |
+| /tests       | \*.test.js       | well... just tests for your API                                                        |
+
 
 also http response follow the next structure:
 
