@@ -41,7 +41,7 @@ code --install-extension frani.express-power-up
 
 in case you have `code` command disable [see this link to enable it](https://code.visualstudio.com/docs/editor/command-line#_common-questions)
 
-# Folder Structure
+# Following Porject Structure
 
 this snippets are thought to apply on ExpressJS with the next folder structure
 
@@ -56,6 +56,22 @@ this snippets are thought to apply on ExpressJS with the next folder structure
 | /schemas     | \*.schema.js     | Mongoose models/schemas (data layer)                                                   |
 | /dbs         | \*.db.js         | Function to manage Mongoose schemas                                                    |
 | /helpers     | \*.helper.js     | Helpful functions that can be used in many places but is not necesary a business logic |
+
+also http response follow the next structure:
+
+```json
+// Example:
+// GET /v1/users/frani
+{
+  "success": true,
+  "message": "User @frani found",
+  "body": {
+    "name": "frani",
+    "email": "hi@frani.me",
+    "github": "https://github.com/frani"
+  }
+}
+```
 
 # Snippets
 
