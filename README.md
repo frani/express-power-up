@@ -12,7 +12,10 @@
 <p align="center">
   <a href="https://discord.gg/sYjKHC8"><img alt="Discord" src="https://img.shields.io/discord/759780590962212866"></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img src="https://img.shields.io/visual-studio-marketplace/v/frani.express-power-up?style=flat&logo=visual-studio-code&logoColor=blue" alt="VSCode-ext"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/frani.express-power-up"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/frani.express-power-up?color=yellow"></a>
+  <a href="https://github.com/frani/express-power-up/blob/master/LICENSE.md"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/github/license/frani/express-power-up?color=success"></a>
+	<a href="https://github.com/frani/express-power-up/blob/master/LICENSE.md"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/github/issues/frani/express-power-up"></a>
+	<a href="https://github.com/frani/express-power-up/blob/master/LICENSE.md"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/stars/frani.express-power-up?label=rating&logo=visual-studio-code&logoColor=blue"></a>
 </p>
 
 # Demo
