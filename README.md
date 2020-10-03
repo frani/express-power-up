@@ -44,7 +44,7 @@ code --install-extension frani.express-power-up
 
 in case you have `code` command disable [see this link to enable it](https://code.visualstudio.com/docs/editor/command-line#_common-questions)
 
-# Following Porject Structure
+# Following Project Structure
 
 These snippets are thought to apply on ExpressJS with the next folder structure
 
