@@ -13,18 +13,18 @@
   <a href="https://discord.gg/sYjKHC8"><img alt="Discord" src="https://img.shields.io/discord/759780590962212866"></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img src="https://img.shields.io/visual-studio-marketplace/v/frani.express-power-up?style=flat&logo=visual-studio-code&logoColor=blue" alt="VSCode-ext"></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/i/frani.express-power-up?color=yellow"></a>
-  <a href="https://github.com/frani/express-power-up/blob/master/LICENSE.md"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/github/license/frani/express-power-up?color=success"></a>
-	<a href="https://github.com/frani/express-power-up/blob/master/LICENSE.md"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/github/issues/frani/express-power-up"></a>
-	<a href="https://github.com/frani/express-power-up/blob/master/LICENSE.md"><img alt="Visual Studio Marketplace Installs" src="https://img.shields.io/visual-studio-marketplace/stars/frani.express-power-up?label=rating&logo=visual-studio-code&logoColor=blue"></a>
+  <a href="https://github.com/frani/express-power-up/blob/master/LICENSE.md"><img alt="github license" src="https://img.shields.io/github/license/frani/express-power-up?color=success"></a>
+	<a href="https://github.com/frani/express-power-up/issues"><img alt="github issues" src="https://img.shields.io/github/issues/frani/express-power-up"></a>
+	<a href="https://marketplace.visualstudio.com/items?itemName=frani.express-power-up"><img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/stars/frani.express-power-up?label=rating&logo=visual-studio-code&logoColor=blue"></a>
 </p>
 
 # Demo
 
 <p align="center">
-  <img width="600" alt="Express Power Up - Demo" src="https://raw.githubusercontent.com/frani/express-power-up/master/images/demo.gif">
+  <img width="800" alt="Express Power Up - Demo" src="https://raw.githubusercontent.com/frani/express-power-up/master/images/demo.gif">
 </p>
 
-# About EPUs
+# About express-power-up-snippets
 
 - 100+ snippets
 - Supports es6 syntax
@@ -38,7 +38,7 @@ To install the extension, open the Extensions view on sidenav, search for `expre
 
 ### Install with Terminal:
 
-```bash
+```sh
 code --install-extension frani.express-power-up
 ```
 
@@ -46,7 +46,7 @@ in case you have `code` command disable [see this link to enable it](https://cod
 
 # Following Porject Structure
 
-this snippets are thought to apply on ExpressJS with the next folder structure
+These snippets are thought to apply on ExpressJS with the next folder structure
 
 | Folder       | Suffix Extention | description                                                                            |
 | ------------ | ---------------- | -------------------------------------------------------------------------------------- |
