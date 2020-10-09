@@ -33,6 +33,10 @@
     "snippets": [
       {
         "language": "javascript",
+        "path": "./snippets/apidoc.json"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/application.json"
       },
       {

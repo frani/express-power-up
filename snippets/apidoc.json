@@ -1,0 +1,54 @@
+{
+  "Api doc comment example": {
+    "prefix": "ep-apidoc",
+    "body": [
+      "/**",
+      " * @api {${1:get}} ${2:/user} ${3:Read data of a User}",
+      " * @apiVersion 0.3.0",
+      " * @apiName ${1:get}User",
+      " * @apiGroup User",
+      " * @apiPermission admin",
+      " *",
+      " * @apiDescription get user information",
+      " *",
+      " * @apiParam {String} id The Users-ID.",
+      " *",
+      " * @apiSuccess {String}   id            The Users-ID.",
+      " *",
+      " * @apiSuccessExample {json} Success-Response:",
+      " *     HTTP/1.1 200 OK",
+      " *     {",
+      " *       'firstname': 'John',",
+      " *       'lastname': 'Doe'",
+      " *     }",
+      " *",
+      " * @apiError NoAccessRight Only authenticated Users can access the data.",
+      " * @apiError UserNotFound   The <code>id</code> of the User was not found.",
+      " *",
+      " * @apiErrorExample Response (example):",
+      " *     HTTP/1.1 401 Not Authenticated",
+      " *     {",
+      " *       'error': 'NoAccessRight'",
+      " *     }",
+      " */\n$0"
+    ],
+    "description": "Create apidoc comment example"
+  },
+  "Api doc define": {
+    "prefix": "ep-apidoc-define",
+    "body": [
+      "/**",
+      " * @apiDefine ${1:UserNotAuthenticated}Error",
+      " *",
+      " * @apiError ${1:UserNotAuthenticated} User must be Authenticated.",
+      " *",
+      " * @apiErrorExample Error-Response:",
+      " *     HTTP/1.1 401 Not Authenticated",
+      " *     {",
+      " *       'error': '${1:UserNotAuthenticated}'",
+      " *     }",
+      " */\n$0"
+    ],
+    "description": "Create apidoc define"
+  }
+}
