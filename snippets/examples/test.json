@@ -12,7 +12,7 @@
       "\t\t.get('/${2:v1}/${1:status}')",
       "\t\t.set('Accept', 'application/json')",
       "\t\t.expect('Content-Type', /json/)",
-      "\t\t.expect(${4:httpstatus.OK})",
+      "\t\t.expect(${4:httpStatus.OK})",
       "\t\t.then((res) => {",
       "\t\texpect(res.body.success).to.be.equal(true)",
       "\t\texpect(res.body.message).to.be.equal('OK')",
