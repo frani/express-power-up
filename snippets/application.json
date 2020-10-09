@@ -1,131 +1,111 @@
 {
-    "App Variable": {
-        "prefix": "ep-app",
-        "body": "const app = express()",
-        "description": "Add app variable"
-    },
-    "All HTTP Requests": {
-        "prefix": "ep-app-all",
-        "body": [
-            "app.all('${1:path}', (req, res, next) => {",
-            "\t$2",
-            "\tnext()",
-            "})$0"
-        ],
-        "description": "This method is like the standard app.METHOD() methods, except it matches all HTTP verbs."
-    },
-    "HTTP GET Requests": {
-        "prefix": "ep-app-get",
-        "body": [
-            "app.get('${1:path}', (req, res) => {",
-            "\t$2",
-            "})$0"
-        ],
-        "description": "Create HTTP GET requests"
-    },
-    "HTTP POST Requests": {
-        "prefix": "ep-app-post",
-        "body": [
-            "app.post('${1:path}', (req, res) => {",
-            "\t$2",
-            "})$0"
-        ],
-        "description": "Create HTTP POST requests"
-    },
-    "HTTP PUT Requests": {
-        "prefix": "ep-app-put",
-        "body": [
-            "app.put('${1:path}', (req, res) => {",
-            "\t$2",
-            "})$0"
-        ],
-        "description": "Create HTTP PUT requests"
-    },
-    "HTTP DELETE Requests": {
-        "prefix": "ep-app-delete",
-        "body": [
-            "app.delete('${1:path}', (req, res) => {",
-            "\t$2",
-            "})$0"
-        ],
-        "description": "Routes HTTP DELETE requests to the specified path with the specified callback functions."
-    },
-    "HTTP PATCH Requests": {
-        "prefix": "ep-app-patch",
-        "body": [
-            "app.patch('${1:path}', (req, res) => {",
-            "\t$2",
-            "})$0"
-        ],
-        "description": "Create HTTP PATCH requests"
-    },
-    "App Disable": {
-        "prefix": "ep-app-disable",
-        "body": "app.disable('${1:name}')$0",
-        "description": "Sets the Boolean setting name to false, where name is one of the properties from the app settings table."
-    },
-    "App Disabled": {
-        "prefix": "ep-app-disabled",
-        "body": "app.disabled('${1:name}')$0",
-        "description": "Returns true if the Boolean setting name is disabled (false), where name is one of the properties from the app settings table."
-    },
-    "App Enable": {
-        "prefix": "ep-app-enable",
-        "body": "app.enable('${1:name}')$0",
-        "description": "Sets the Boolean setting name to true, where name is one of the properties from the app settings table."
-    },
-    "App Enabled": {
-        "prefix": "ep-app-enabled",
-        "body": "app.enabled('${1:name}')$0",
-        "description": "Returns true if the setting name is enabled (true), where name is one of the properties from the app settings table."
-    },
-    "App Engine": {
-        "prefix": "ep-app-engine",
-        "body": "app.engine('${1:ext}', ${2:callback})$0",
-        "description": "Registers the given template engine callback as ext."
-    },
-    "App Param": {
-        "prefix": "ep-app-param",
-        "body": "app.param('${1:name}', ${2:callback})$0",
-        "description": "Add callback triggers to route parameters, where name is the name of the parameter or an array of them, and callback is the callback function."
-    },
-    "App Path": {
-        "prefix": "ep-app-path",
-        "body": "app.path()$0",
-        "description": "Returns the canonical path of the app, a string."
-    },
-    "App Render": {
-        "prefix": "ep-app-render",
-        "body": "app.render('${1:view}', ${2:locals}, ${3:callback})$0",
-        "description": "Returns the rendered HTML of a view via the callback function."
-    },
-    "App Route": {
-        "prefix": "ep-app-route",
-        "body": "app.route('${1:path}')$0",
-        "description": "Returns an instance of a single route, which you can then use to handle HTTP verbs with optional middleware."
-    },
-    "App Set": {
-        "prefix": "ep-app-set",
-        "body": "app.set('${1:name}', ${2:value})$0",
-        "description": "Assigns setting name to value."
-    },
-    "App Listen": {
-        "prefix": "ep-app-listen",
-        "body": "app.listen(${1:port})$0",
-        "description": "Starts a UNIX socket and listens for connections on the given path. This method is identical to Node’s http.Server.listen()"
-    },
-    "App Listen With Callback": {
-        "prefix": "ep-app-listen-with-callback",
-        "body": [
-            "app.listen(${1:port}, () => {",
-            "\tconsole.log('Server started on ${1:port}')",
-            "})"
-        ],
-        "description": "Starts a UNIX socket and listens for connections on the given path. This method is identical to Node’s http.Server.listen()"
-    },
-    "App Use": {
-        "prefix": "ep-app-use",
-        "body": "app.use($1)",
-        "description": "Mounts the specified middleware function or functions at the specified path."
-    }
+  "App Variable": {
+    "prefix": "ep-app",
+    "body": "const app = express()",
+    "description": "Add app variable"
+  },
+  "All HTTP Requests": {
+    "prefix": "ep-app-all",
+    "body": [
+      "app.all('${1:path}', (req, res, next) => {",
+      "\t$2",
+      "\tnext()",
+      "})$0"
+    ],
+    "description": "This method is like the standard app.METHOD() methods, except it matches all HTTP verbs."
+  },
+  "HTTP GET Requests": {
+    "prefix": "ep-app-get",
+    "body": ["app.get('${1:path}', (req, res) => {", "\t$2", "})$0"],
+    "description": "Create HTTP GET requests"
+  },
+  "HTTP POST Requests": {
+    "prefix": "ep-app-post",
+    "body": ["app.post('${1:path}', (req, res) => {", "\t$2", "})$0"],
+    "description": "Create HTTP POST requests"
+  },
+  "HTTP PUT Requests": {
+    "prefix": "ep-app-put",
+    "body": ["app.put('${1:path}', (req, res) => {", "\t$2", "})$0"],
+    "description": "Create HTTP PUT requests"
+  },
+  "HTTP DELETE Requests": {
+    "prefix": "ep-app-delete",
+    "body": ["app.delete('${1:path}', (req, res) => {", "\t$2", "})$0"],
+    "description": "Routes HTTP DELETE requests to the specified path with the specified callback functions."
+  },
+  "HTTP PATCH Requests": {
+    "prefix": "ep-app-patch",
+    "body": ["app.patch('${1:path}', (req, res) => {", "\t$2", "})$0"],
+    "description": "Create HTTP PATCH requests"
+  },
+  "App Disable": {
+    "prefix": "ep-app-disable",
+    "body": "app.disable('${1:name}')$0",
+    "description": "Sets the Boolean setting name to false, where name is one of the properties from the app settings table."
+  },
+  "App Disabled": {
+    "prefix": "ep-app-disabled",
+    "body": "app.disabled('${1:name}')$0",
+    "description": "Returns true if the Boolean setting name is disabled (false), where name is one of the properties from the app settings table."
+  },
+  "App Enable": {
+    "prefix": "ep-app-enable",
+    "body": "app.enable('${1:name}')$0",
+    "description": "Sets the Boolean setting name to true, where name is one of the properties from the app settings table."
+  },
+  "App Enabled": {
+    "prefix": "ep-app-enabled",
+    "body": "app.enabled('${1:name}')$0",
+    "description": "Returns true if the setting name is enabled (true), where name is one of the properties from the app settings table."
+  },
+  "App Engine": {
+    "prefix": "ep-app-engine",
+    "body": "app.engine('${1:ext}', ${2:callback})$0",
+    "description": "Registers the given template engine callback as ext."
+  },
+  "App Param": {
+    "prefix": "ep-app-param",
+    "body": "app.param('${1:name}', ${2:callback})$0",
+    "description": "Add callback triggers to route parameters, where name is the name of the parameter or an array of them, and callback is the callback function."
+  },
+  "App Path": {
+    "prefix": "ep-app-path",
+    "body": "app.path()$0",
+    "description": "Returns the canonical path of the app, a string."
+  },
+  "App Render": {
+    "prefix": "ep-app-render",
+    "body": "app.render('${1:view}', ${2:locals}, ${3:callback})$0",
+    "description": "Returns the rendered HTML of a view via the callback function."
+  },
+  "App Route": {
+    "prefix": "ep-app-route",
+    "body": "app.route('${1:path}')$0",
+    "description": "Returns an instance of a single route, which you can then use to handle HTTP verbs with optional middleware."
+  },
+  "App Set": {
+    "prefix": "ep-app-set",
+    "body": "app.set('${1:name}', ${2:value})$0",
+    "description": "Assigns setting name to value."
+  },
+  "App Listen": {
+    "prefix": "ep-app-listen",
+    "body": "app.listen(${1:port})$0",
+    "description": "Starts a UNIX socket and listens for connections on the given path. This method is identical to Node’s http.Server.listen()"
+  },
+  "App Listen With Callback": {
+    "prefix": "ep-app-listen-with-callback",
+    "body": [
+      "app.listen(${1:port}, () => {",
+      "\tconsole.log('Server started on ${1:port}')",
+      "})"
+    ],
+    "description": "Starts a UNIX socket and listens for connections on the given path. This method is identical to Node’s http.Server.listen()"
+  },
+  "App Use": {
+    "prefix": "ep-app-use",
+    "body": "app.use($1)",
+    "description": "Mounts the specified middleware function or functions at the specified path."
+  }
 }

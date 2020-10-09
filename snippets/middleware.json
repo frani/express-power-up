@@ -1,40 +1,42 @@
 {
-    "Middleware Helmet": {
-        "prefix": "ep-mid-helmet",
-        "body": "app.use(helmet())$0",
-        "description": "Security level middleware"
-    },
-    "Middleware Morgan": {
-        "prefix": "ep-mid-morgan",
-        "body": ["const ${1:morgan} = require('morgan')",
-            "",
-            "app.use(${1:morgan}())",
-            "$0"],
-        "description": "Initializing the morgan middleware"
-    },
-    "Middleware Compression": {
-        "prefix": "ep-mid-compress",
-        "body": "app.use(compression({level:zlib.Z_DEFAULT_COMPRESSION}))$0",
-        "description": "Compression Middleware"
-    },
-    "Middleware Body Parser Json": {
-        "prefix": "ep-mid-body-parser-json",
-        "body": "app.use(${1:bodyParser}.json())$0",
-        "description": "For parsing application/json"
-    },
-    "Middleware Body Parser Url Encoded": {
-        "prefix": "ep-mid-body-parser-url",
-        "body": ["app.use(${1:bodyParser}.urlencoded({extended: true}))$0"],
-        "description": "For parsing application/x-www-form-urlencoded"
-    },
-    "Middleware Method Override": {
-        "prefix": "ep-mid-method-override",
-        "body": "app.use(methodOverride('_method'))$0",
-        "description": "MethodOverride: override with POST having ?_method=DELETE"
-    },
-    "Middleware Static File": {
-        "prefix": "ep-mid-static-file",
-        "body": "app.use(express.static(__dirname + '/public'))$0",
-        "description": "Static file middleware"
-    }
+  "Middleware Helmet": {
+    "prefix": "ep-mid-helmet",
+    "body": "app.use(helmet())$0",
+    "description": "Security level middleware"
+  },
+  "Middleware Morgan": {
+    "prefix": "ep-mid-morgan",
+    "body": [
+      "const ${1:morgan} = require('morgan')",
+      "",
+      "app.use(${1:morgan}())",
+      "$0"
+    ],
+    "description": "Initializing the morgan middleware"
+  },
+  "Middleware Compression": {
+    "prefix": "ep-mid-compress",
+    "body": "app.use(compression({level:zlib.Z_DEFAULT_COMPRESSION}))$0",
+    "description": "Compression Middleware"
+  },
+  "Middleware Body Parser Json": {
+    "prefix": "ep-mid-body-parser-json",
+    "body": "app.use(${1:bodyParser}.json())$0",
+    "description": "For parsing application/json"
+  },
+  "Middleware Body Parser Url Encoded": {
+    "prefix": "ep-mid-body-parser-url",
+    "body": ["app.use(${1:bodyParser}.urlencoded({extended: true}))$0"],
+    "description": "For parsing application/x-www-form-urlencoded"
+  },
+  "Middleware Method Override": {
+    "prefix": "ep-mid-method-override",
+    "body": "app.use(methodOverride('_method'))$0",
+    "description": "MethodOverride: override with POST having ?_method=DELETE"
+  },
+  "Middleware Static File": {
+    "prefix": "ep-mid-static-file",
+    "body": "app.use(express.static(__dirname + '/public'))$0",
+    "description": "Static file middleware"
+  }
 }
