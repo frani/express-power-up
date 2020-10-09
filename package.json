@@ -2,7 +2,7 @@
   "name": "express-power-up",
   "displayName": "Express power up Snippets",
   "description": "ExpressJS Snippets to make a good clean code API",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "publisher": "frani",
   "license": "MIT",
   "repository": {
