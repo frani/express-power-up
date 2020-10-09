@@ -19,7 +19,7 @@
       "",
       ".delete('/', validate(validation.delete${1:item} ), controller.delete${1:item})",
       "",
-      ".get('/:${1:item}id', controller.get${1:Item})",
+      ".get('/:${1:item}id', validate(validation.get ), controller.get)",
       "",
       "",
       "module.exports = router\n$0"
