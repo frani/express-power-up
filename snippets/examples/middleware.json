@@ -7,11 +7,15 @@
       "* ${1:middle}. ",
       "* @public",
       "*/",
-      "exports.${1:middle} = (err, req, res, next) => {",
+      "const ${1:middle} = (err, req, res, next) => {",
       "$0",
       "if ( something === false ) res.status(httpStatus.NOT_FOUND)",
       "return next()",
-      "}"
+      "}",
+      "",
+      "module.exports = {",
+      "  ${1:middle}",
+      "}\n$0"
     ],
     "description": "Create '*.mid.js' file content example importing httpStatus"
   }
