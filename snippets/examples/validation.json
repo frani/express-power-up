@@ -2,7 +2,7 @@
   "Create Controller with GET": {
     "prefix": "ep-example-validation",
     "body": [
-      "const { Joi } = require('express-validation')",
+      "const Joi = require('joi')",
       "module.exports = {",
       "// POST /${1:item}s",
       "postModule: {",
