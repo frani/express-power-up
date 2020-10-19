@@ -61,6 +61,7 @@
       "const update = async (query, data, options = {}) => {",
       "  try {",
       "    let toUpdate = data",
+      "    toUpdate['updated_at'] = Date.now()",
       "    const updated = await schema.updateOne(query, toUpdate, options)",
       "    if (updated.nModified > 0) return true",
       "    return false",
