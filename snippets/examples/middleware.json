@@ -7,7 +7,7 @@
       "* ${1:middle}. ",
       "* @public",
       "*/",
-      "const ${1:middle} = (err, req, res, next) => {",
+      "const ${1:middle} = (req, res, next) => {",
       "$0",
       "if ( something === false ) res.status(httpStatus.NOT_FOUND)",
       "return next()",
