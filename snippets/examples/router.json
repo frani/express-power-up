@@ -15,7 +15,7 @@
       "",
       "router.put('/', validate(validation.put), controller.put)",
       "",
-      "router.delete('/', validate(validation.delete${1:item} ), controller.delete${1:item})",
+      "router.delete('/', validate(validation.remove ), controller.remove)",
       "",
       "router.get('/:${1:item}id', validate(validation.get ), controller.get)",
       "",
