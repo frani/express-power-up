@@ -9,7 +9,7 @@
       "",
       "const router = express.Router({ mergeParams: true, caseSensitive: true })",
       "",
-      "router.get('/', controller.list)",
+      "router.get('/', validate(validation.list), controller.list)",
       "",
       "router.post('/', validate(validation.post), controller.post)",
       "",
