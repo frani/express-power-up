@@ -11,7 +11,7 @@
       " * @returns {array} Array with ${1:item}s objects",
       " */",
       "const list = async (query = {}, page = 1, limit = 10) => {",
-      "  const options = { page, limit, sort: { _id: -1 } }",
+      "  const options = { page, limit, sort: { _id: -1 }, select: '-_id', lean: true }",
       "  try {",
       "    const listed = await schema.paginate(query, options)",
       "    return listed",
