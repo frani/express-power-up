@@ -1,9 +1,8 @@
 name: Deploy Extension
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    type: published
 
 jobs:
   deploy:
