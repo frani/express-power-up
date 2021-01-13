@@ -3,7 +3,7 @@
     "prefix": "ep-apidoc-list",
     "body": [
       "/**",
-      " * @api {${1:get}} ${3:/v1}/${2:items} List ${2:items}",
+      " * @api {${1:get}} ${3:/v1}/${2:items} 1. List ${2:items}",
       " * @apiVersion 1.0.0",
       " * @apiName ${4:list}",
       " * @apiGroup ${5:${2:items}}",
@@ -55,7 +55,7 @@
     "prefix": "ep-apidoc-post",
     "body": [
       "/**",
-      " * @api {${1:post}} ${3:/v1}/${2:item}s Create ${2:item}",
+      " * @api {${1:post}} ${3:/v1}/${2:item}s 2. Create ${2:item}",
       " * @apiVersion 1.0.0",
       " * @apiName ${4:post}",
       " * @apiGroup ${5:${2:items}}",
@@ -100,7 +100,7 @@
     "prefix": "ep-apidoc-get",
     "body": [
       "/**",
-      " * @api {${1:get}} ${4:/v1}/${2:items}/:${3:item}id Get ${3:item}",
+      " * @api {${1:get}} ${4:/v1}/${2:items}/:${3:item}id 3. Find ${3:item}",
       " * @apiVersion 1.0.0",
       " * @apiName ${5:get}",
       " * @apiGroup ${6:${2:items}}",
@@ -142,7 +142,7 @@
     "prefix": "ep-apidoc-put",
     "body": [
       "/**",
-      " * @api {${1:put}} ${4:/v1}/${2:items}/:${3:item}id Put ${3:item}",
+      " * @api {${1:put}} ${4:/v1}/${2:items}/:${3:item}id 4. Update ${3:item}",
       " * @apiVersion 1.0.0",
       " * @apiName ${5:put}",
       " * @apiGroup ${6:${2:items}}",
@@ -187,7 +187,7 @@
     "prefix": "ep-apidoc-delete",
     "body": [
       "/**",
-      " * @api {${1:delete}} ${4:/v1}/${2:items}/:${3:item}id Delete ${3:item}",
+      " * @api {${1:delete}} ${4:/v1}/${2:items}/:${3:item}id 5. Remove ${3:item}",
       " * @apiVersion 1.0.0",
       " * @apiName ${5:delete}",
       " * @apiGroup ${6:${2:items}}",
