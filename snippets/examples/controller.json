@@ -64,7 +64,6 @@
       "*/",
       "const put = async (req, res, next) => {",
       "try {",
-      "const { page, limit } = req.query",
       "let query = {}",
       "if (${1:item}id) query['uuid'] = { uuid: ${1:item}id }",
       "const data = req.body",
