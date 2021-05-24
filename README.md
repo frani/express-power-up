@@ -211,6 +211,10 @@ The other example snippets are preparing...
 | `ep-test-it-put`          | Create 'it' test with PUT method            |
 | `ep-test-it-delete`       | Create 'it' test with DELETE method         |
 
+# Source
+
+- [VSCode Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
+
 # Contributors
 
 # Inspiration
