@@ -80,7 +80,7 @@
       " */",
       "const update = async ({query, data, options = {}}) => {",
       "  try {",
-      "    let toUpdate = { $set: { ...data }, $currentDate: { updated_at: true } }",
+      "    let toUpdate = { \\$set: { ...data }, \\$currentDate: { updated_at: true } }",
       "    const updated = await schema.updateOne(query, toUpdate, options)",
       "    if (updated.nModified > 0) return true",
       "    return false",
