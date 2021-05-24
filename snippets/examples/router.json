@@ -13,6 +13,8 @@
       "",
       "router.post('/', validate(validation.post), controller.post)",
       "",
+      "router.patch('/', validate(validation.patch), controller.patch)",
+      "",
       "router.put('/', validate(validation.put), controller.put)",
       "",
       "router.delete('/', validate(validation.remove ), controller.remove)",
