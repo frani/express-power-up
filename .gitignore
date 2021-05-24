@@ -2,6 +2,7 @@ out
 node_modules
 .vscode-test/
 .vsix
+packages
 npm-debug.log
 vsc-extension-quickstart.md
 *.vsix
