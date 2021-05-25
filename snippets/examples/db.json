@@ -106,6 +106,7 @@
       "  list,",
       "  find,",
       "  create,",
+      "  replace,",
       "  update,",
       "  remove",
       "}\n$0"
